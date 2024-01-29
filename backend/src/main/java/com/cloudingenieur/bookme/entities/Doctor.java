@@ -27,6 +27,4 @@ public class Doctor {
 
     private String message;
 
-
-
 }
