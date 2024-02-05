@@ -30,19 +30,36 @@ const DatesAndTimes = (props: any) => {
                 <div className="mb-10">
                     <label
                         className="block text-gray-700 text-sm font-bold mb-2"
-                        htmlFor="times"
+                        htmlFor="hour"
                     >
-                        Select Times
+                        Select Hour
                     </label>
                     <select
                         className="block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                        name="times"
-                        value={data.times}
+                        name="hour"
+                        value={data.hour}
                         onChange={handleChange}
                     >
-                        <option value="13">13:00</option>
-                        <option value="14">14:00</option>
-                        <option value="17">17:00</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="17">17</option>
+                    </select>
+                </div>
+                <div className="mb-10">
+                    <label
+                        className="block text-gray-700 text-sm font-bold mb-2"
+                        htmlFor="minute"
+                    >
+                        Select Minute
+                    </label>
+                    <select
+                        className="block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        name="minute"
+                        value={data.minute}
+                        onChange={handleChange}
+                    >
+                        <option value="00">00</option>
+                        <option value="30">30</option>
                     </select>
                 </div>
             </form>

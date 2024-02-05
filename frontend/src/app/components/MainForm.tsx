@@ -37,6 +37,7 @@ const MainForm = () => {
     ]
 
     const handleSubmit = (data: any) => {
+        console.log(data);
         alert(data)
     }
 
